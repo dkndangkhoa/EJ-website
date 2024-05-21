@@ -1,377 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" href="./images/Ej-Logo.png">
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">StylZ by EJ</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#Services" onclick="toggleMenu()">Services</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./images/Ej-Logo.png" alt="EJ" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./images/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./images/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./images/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./images/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./images/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#Services'"
-      />
-    </section>
-    <section id="Services">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Services</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./images/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./images/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./images/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./images/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./images/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <title>Personal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Free HTML5 Template plus Photoshop design">
+  <meta name="keywords" content="free html template, portfolio, html5, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="assets/img/EJlogoB.png" type="image/icon type">
+</head>
+<body>
+
+	<!-- SECTION: Splashscreen -->
+	<div class="splashscreen">
+		<div class="preloader">
+			<span class="preloader__text">Loading</span>
+		</div>
+	</div>
+	<!-- END SECTION: Splashscreen -->
+	<!-- SECTION: Navigation -->
+	<div id="top" class="navigation">
+		<div class="navigation__wrapper wrapper--large">
+			<a class="navigation__logo logo" href="#0"><img src="assets/img/EJlogoT.png" alt=""></a>
+			<nav class="navigation__container">
+				<ul class="navigation__list">
+					<li><a href="#0">Home</a></li>
+					<li><a href="#blog">Services</a></li>
+					<li><a href="#work">Shop</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<a class="navigation__cta button" href="#0">BOOK APPOINTMENT</a>
+			<div class="navigation__burger">
+				<span class="navigation__burger-el navigation__burger-el--top"></span>
+				<span class="navigation__burger-el navigation__burger-el--middle"></span>
+				<span class="navigation__burger-el navigation__burger-el--bottom"></span>
+			</div>
+		</div>
+	</div>
+	<!-- END SECTION: Navigation -->
+	<!-- SECTION: Intro -->
+	<header class="header">
+		<div class="introduction">
+			<h1 class="introduction__content">
+				<span class="introduction__content-el introduction__content-el--name">StylZ</span>
+				<span class="introduction__content-el introduction__content-el--description">EJ</span>
+				<span class="introduction__content-el introduction__content-el--job">by</span>
+			</h1>
+			<svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z"/></g></svg>
+		</div>
+	</header>
+	<!-- END SECTION: Intro -->
+	<main role="main">
+		<!-- SECTION: About -->
+		<section class="about">
+			<div class="about__wrapper wrapper--small">
+				<div class="about__content">
+					<div class="about__content-blurb blurb blurb--framed">
+						<h2 class="blurb__heading">Nothing is<br>impossible</h2>
+						<p class="blurb__copy no-margin">If you just work hard enough at it</p>
+					</div>
+					<p class="about__content-signature">StylZ by EJ</p>
+				</div>
+				<img class="about__visual" src="assets/img/about-visual.png" alt="StylZ by EJ">
+			</div>
+		</section>
+		<!-- END SECTION: About -->
+		<!-- SECTION: App Design -->
+		<section class="app-design">
+			<div class="app-design__wrapper wrapper--large">
+				<div class="app-design__content blurb">
+					<h2 class="blurb__heading">StylZ<br>by<br>EJ</h2>
+					<p class="blurb__copy blurb__copy--tight">Hi! My name is EJ</p>
+				</div>
+			</div>
+			<figure class="app-design__visual"></figure>
+		</section>
+		<!-- END SECTION: App Design -->
+				<!-- SECTION: Blog -->
+				<section id="blog" class="blog">
+					<h2 class="blog__heading title">Services</h2>
+					<div class="blog__wrapper wrapper--large">
+						<article class="blog__post">
+							<div class="blog__post-thumbnail">
+								<img src="assets/img/blog-post-1.jpg" alt="Man viewing work plans">
+							</div>
+							<div class="blog__post-excerpt">
+								<h3>Dames</h3>
+								<p>Prices: €€€€</p>
+							</div>
+						</article>
+						<article class="blog__post">
+							<div class="blog__post-thumbnail">
+								<img src="assets/img/blog-post-2.jpg" alt="Man hanging pictures">
+							</div>
+							<div class="blog__post-excerpt">
+								<h3>Heren</h3>
+								<p>Prices: €€€€</p>
+							</div>
+						</article>
+						<article class="blog__post">
+							<div class="blog__post-thumbnail">
+								<img src="assets/img/blog-post-3.jpg" alt="Men working at a desk">
+							</div>
+							<div class="blog__post-excerpt">
+								<h3>Kinderen</h3>
+								<p>Prices: €€€€</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<!-- END SECTION: Blog -->
+		<!-- SECTION: Web Design -->
+		<section class="web-design">
+			<div class="web-design__wrapper wrapper--small">
+				<div class="web-design__content blurb">
+					<h2 class="blurb__heading">American <br>Crew</h2>
+					<p class="blurb__copy blurb__copy--tight">American Crew is a landmark in the history of men's grooming.<br>It's the leading salon brand created specifically for men and the stylists they trust.</p>
+				</div>
+			</div>
+			<figure class="web-design__visual"></figure>
+		</section>
+		<!-- END SECTION: Web Design -->
+		<!-- SECTION: Work -->
+		<section id="work" class="work">
+			<h2 class="work__heading title">Latest Products</h2>
+			<div class="work__wrapper wrapper--large">
+				<ul class="work__list">
+					<li class="work__list-el work__list-el--is-active">
+						<div class="work__content">
+							<div class="work__content-blurb blurb blurb--framed">
+								<h3 class="blurb__heading">3-IN-1</h3>
+								<p class="blurb__copy">All-in-one Shampoo,Conditioner, and Body Wash perfect for travel or the gym.</p>
+							</div>
+							<a class="transform-link" href="#0">See full project</a>
+						</div>
+						<div class="work__visual">
+							<img src="assets/img/work-strategik.webp" alt="Strategik INC">
+						</div>
+					</li>
+					<li class="work__list-el">
+						<div class="work__content">
+							<div class="work__content-blurb blurb blurb--framed">
+								<h3 class="blurb__heading">FIBER CREAM</h3>
+								<p class="blurb__copy">Fibrous cream with medium hold and natural shine A styling cream that combines flexibility with control, gives your hair refined texture and a natural shine finish.</p>
+							</div>
+							<a class="transform-link" href="#0">See full project</a>
+						</div>
+						<div class="work__visual">
+							<img src="assets/img/work-eostre.webp" alt="Ēostre UI Kit">
+						</div>
+					</li>
+					<li class="work__list-el">
+						<div class="work__content">
+							<div class="work__content-blurb blurb blurb--framed">
+								<h3 class="blurb__heading">FORMING CREAM</h3>
+								<p class="blurb__copy">Medium hold with medium shine Easy to use styling cream works well for all hair types. Forming Cream provides hold, excellent pliability, and a natural shine.</p>
+							</div>
+							<a class="transform-link" href="#0">See full project</a>
+						</div>
+						<div class="work__visual">
+							<img src="assets/img/work-go-outside.webp" alt="Go Outside App">
+						</div>
+					</li>
+				</ul>
+				<ul class="work__navigation">
+					<li class="work__navigation-el work__navigation-el--is-active"></li>
+					<li class="work__navigation-el"></li>
+					<li class="work__navigation-el"></li>
+				</ul>
+			</div>
+		</section>
+		<!-- END SECTION: Work -->
+		<!-- SECTION: Contact -->
+		<section id="contact" class="contact">
+			<h2 class="contact__heading title">Contact Me</h2>
+			<div class="contact__wrapper wrapper--large">
+				<div class="contact__visual">
+					<img src="assets/img/contact-visual.png" alt="EJ's location">
+				</div>
+				<!-- Simple form setup: formspree.io -->
+				<form class="contact__form">
+					<p>ADRES
+						<br>Avenue Concordia 22C
+						<br>3062 LH Rotterdam</p>
+					<p>OPENINGSTIJDEN
+						<br>Di-Do: 09:00 - 17:00
+						<br>Vr: 09:00 - 20:00
+						<br>Za: 09:00 - 16:00 </p>
+					<p>CONTACT INFO
+						<br>Tel: +31 646 149 679</p>
+				</form>
+			</div>
+		</section>
+		<!-- END SECTION: Contact -->
+	</main>
+	<!-- SECTION: Footer -->
+	<footer class="footer">
+		<div class="footer__wrapper wrapper--large">
+			<p class="footer__copyright no-margin">&copy; DKN</p>
+			<a class="footer__logo logo" href="#0">EJ</a>
+			<a class="footer__arrow" href="#top">
+				<svg class="footer__arrow-el" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M315.4 365c-336-305-345-315-290-351 18-12 32-14 45-8 10 5 145 123 300 262l281 253 196-178c108-98 237-215 287-260 50-46 98-83 107-83s27 9 40 19c20 16 22 23 14 46 -12 33-623 585-647 585C638.4 650 489.4 522 315.4 365z"/></g></svg>
+			</a>
+		</div>
+	</footer>
+	<!-- END SECTION: Footer -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- jQuery local fallback -->
+	<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+	<script src="assets/js/functions-min.js"></script>
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID and uncomment -->
+	<!--
+	<script>
+	(function(b, o, i, l, e, r) {
+		b.GoogleAnalyticsObject = l;
+		b[l] || (b[l] =
+			function() {
+				(b[l].q = b[l].q || []).push(arguments)
+			});
+		b[l].l = +new Date;
+		e = o.createElement(i);
+		r = o.getElementsByTagName(i)[0];
+		e.src = '//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e, r)
+	}(window, document, 'script', 'ga'));
+	ga('create', 'UA-XXXXX-X', 'auto');
+	ga('send', 'pageview');
+	</script>
+	-->	
+</body>
 </html>
